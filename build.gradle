@@ -36,6 +36,6 @@ task EasyTests(type: Test) {
     useJUnitPlatform {
         includeTags '1st_test'
         includeTags '2nd_test'
-        excludeTags 'dont_test_it'
+        includeTags 'dont_test_it'
     }
 }
