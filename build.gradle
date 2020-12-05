@@ -29,11 +29,11 @@ dependencies {
 }
 
 tasks.withType(Test) {
-    systemProperties = System.properties as Map<String, ?>
+    systemProperties = System.properties
 
 }
 
-task simple_tests(type: Test) {
+task EasyTests(type: Test) {
     useJUnitPlatform {
         includeTags 'bad_test'
         includeTags 'ok_test'
