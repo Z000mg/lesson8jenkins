@@ -21,7 +21,7 @@ public class EasyTests {
     }
 
     @Test
-    @Tag("don't_test_it")
+    @Tag("dont_test_it")
     void dontDoTest () {
         assertEquals(a * b, "сорок", "a * b not equals 'сорок'");
     }

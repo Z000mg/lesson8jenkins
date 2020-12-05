@@ -37,6 +37,6 @@ task simple_tests(type: Test) {
     useJUnitPlatform {
         includeTags 'bad_test'
         includeTags 'ok_test'
-        excludeTags 'not_you'
+        excludeTags 'dont_test_it'
     }
 }
