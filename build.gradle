@@ -29,8 +29,7 @@ dependencies {
 }
 
 tasks.withType(Test) {
-    systemProperties = System.properties
-
+    systemProperties = System.properties as Map<String, ?>
 }
 
 task EasyTests(type: Test) {
