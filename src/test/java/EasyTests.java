@@ -9,20 +9,20 @@ public class EasyTests {
     int b = 8;
 
     @Test
-    @Tag("1st_test")
+    @Tag("1st_Test")
     void falseTest () {
         assertNotEquals(a, b, "a not equals b");
     }
 
     @Test
-    @Tag("2nd_test")
+    @Tag("2nd_Test")
     void trueTest () {
         assertEquals(a * b, 40, "a * b equals 40");
     }
 
     @Test
-    @Tag("dont_test_it")
-    void dontDoTest () {
+    @Tag("doNot_Test_It")
+    void doNotDoTest () {
         assertEquals(a * b, 40, "a * b equals 40");
     }
 }
