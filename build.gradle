@@ -35,8 +35,8 @@ tasks.withType(Test) {
 
 task EasyTests(type: Test) {
     useJUnitPlatform {
-        includeTags 'bad_test'
-        includeTags 'ok_test'
+        includeTags '1st_test'
+        includeTags '2nd_test'
         excludeTags 'dont_test_it'
     }
 }

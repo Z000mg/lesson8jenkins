@@ -9,13 +9,13 @@ public class EasyTests {
     int b = 8;
 
     @Test
-    @Tag("bad_test")
+    @Tag("1st_test")
     void falseTest () {
         assertNotEquals(a, b, "a not equals b");
     }
 
     @Test
-    @Tag("ok_test")
+    @Tag("2nd_test")
     void trueTest () {
         assertEquals(a * b, 40, "a * b equals 40");
     }
@@ -23,7 +23,7 @@ public class EasyTests {
     @Test
     @Tag("dont_test_it")
     void dontDoTest () {
-        assertEquals(a * b, "сорок", "a * b not equals 'сорок'");
+        assertEquals(a * b, 40, "a * b equals 40");
     }
 }
 
